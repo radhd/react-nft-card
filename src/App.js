@@ -1,23 +1,19 @@
 import "./App.css";
-import Text from "./Text";
+import Card from "./Card";
 
 function App() {
-  function foo() {
-    return 5;
-  }
   return (
-    <div className="container" style={styles.container}>
-      <h1>Hello </h1>
-      <Text />
-      <p>{false ? "done" : "not done"}</p>
+    <div className="bgWrapper" style={styles.bgWrapper}>
+      <Card />
     </div>
   );
 }
 
-export default App;
-
 const styles = {
-  container: {
-    backgroundColor: "blue",
+  bgWrapper: {
+    backgroundColor: "var(--neutral-very-dark-blue-bg)",
+    padding: "62px 24px",
   },
 };
+
+export default App;
